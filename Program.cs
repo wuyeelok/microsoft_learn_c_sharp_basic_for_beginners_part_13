@@ -24,3 +24,11 @@ foreach (var greet in greetings[1..4])
 {
     Console.WriteLine(greet);
 }
+
+var simpleArr = new string[] { "Apple", "Banana", "Cherry", "Date", "Elderberry" };
+// simpleArr.Add() produce error on array
+simpleArr = [.. simpleArr, "Kiwi", "Lemon", "Mango"]; // Add items to the end of Array
+foreach (var item in simpleArr)
+{
+    Console.WriteLine(item);
+}
